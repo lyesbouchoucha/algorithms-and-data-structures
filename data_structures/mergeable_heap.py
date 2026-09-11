@@ -36,7 +36,6 @@ class MergeableHeap:
         if min_node is None:
             raise ValueError("extract_min from empty heap") 
             
-        # Si le minimum est la tête
         if min_node == self.head:
             self.head = min_node.next 
             if self.head is None:  
